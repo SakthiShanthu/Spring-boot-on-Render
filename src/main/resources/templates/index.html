@@ -33,7 +33,7 @@
 	<script type="text/javascript">
 	document.getElementById('fetchData').addEventListener('click', function() {
 	    // URL of your Spring Boot API
-	    const apiUrl = 'http://localhost:1234/render/get';
+	    const apiUrl = 'https://springboot-render-3j97.onrender.com/render/get';
 
 	    fetch(apiUrl)
 	        .then(response => {
@@ -67,8 +67,8 @@
 	    }
 
 	    // URL of your Spring Boot API for mathematical operations
-	    const apiUrl = `http://localhost:1234/render/operation/${operation}?value1=${value1}&value2=${value2}`;
-
+	    const apiUrl = `https://springboot-render-3j97.onrender.com/render/operation/${operation}?value1=${value1}&value2=${value2}`;
+	   
 	    fetch(apiUrl, { method: 'POST' })
 	        .then(response => {
 	            if (!response.ok) {
